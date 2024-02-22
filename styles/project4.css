@@ -80,3 +80,8 @@ p.fixed{
     border: 3px solid darkgreen;
     background-color: lightgreen;
 }
+aside{
+    width: 20%;
+    float:right;
+    background-color: #ffebc6;
+}
