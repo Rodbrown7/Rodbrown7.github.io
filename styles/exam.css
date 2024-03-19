@@ -1,0 +1,44 @@
+body {
+    width: 95%;
+    margin: 15px auto;
+}
+
+nav {
+    /* Add necessary styles for the menu bar */
+}
+
+article {
+    width: 75%;
+}
+
+aside {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    /* Other necessary styles for the aside */
+}
+
+aside ul {
+    list-style-type: upper-roman;
+}
+
+aside ul li {
+    list-style-type: square;
+}
+
+.first-letter {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.wrap-around {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+footer {
+    /* Add necessary styles for the footer */
+}
