@@ -1,3 +1,24 @@
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 body {
     width: 95%;
     margin: 15px auto;
@@ -7,11 +28,18 @@ article {
     width: 75%;
 }
 
+.first-letter {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 150%;
+}
+
 aside {
     width: 20%;
     position: fixed;
     top: 0;
     bottom: 0;
+    overflow-y: auto;
 }
 
 aside ul {
@@ -21,19 +49,13 @@ aside ul {
 aside ul li {
     list-style-type: square;
 }
-
-.first-letter {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.5em;
-    line-height: 1;
-}
-
-.wrap-around {
-    float: left;
-    margin: 0 10px 10px 0;
+article img {
+    display: block;
+    margin: 20px 0;
 }
 
 footer {
-
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
 }
