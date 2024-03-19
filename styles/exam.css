@@ -3,10 +3,6 @@ body {
     margin: 15px auto;
 }
 
-nav {
-    /* Add necessary styles for the menu bar */
-}
-
 article {
     width: 75%;
 }
@@ -39,5 +35,5 @@ aside ul li {
 }
 
 footer {
-    /* Add necessary styles for the footer */
+
 }
