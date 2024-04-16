@@ -24,3 +24,20 @@ table.second th, table.second td{
     vertical-align: middle;
     border: 2px solid purple;
 }
+table.third{
+    border-collapse: collapse;
+}
+table.third th{
+    vertical-align: top;
+    background-color: lawngreen;
+    border-top: 2px solid orangered;
+}
+table.third tr:first-child{
+    border-top: 2px solid orangered;
+}
+table.third tr:last-child{
+    border-bottom: 2px solid orangered;
+}
+table.third th, table.third td {
+    padding: .7em;
+}
