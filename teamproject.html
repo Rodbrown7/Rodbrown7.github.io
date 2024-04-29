@@ -1,40 +1,52 @@
-class Dinosaur:
-    def __init__(self, name, characteristics):
-        self.name = name
-        self.characteristics = characteristics
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Relationships</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .dino-info {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dinosaur Relationships</h1>
+    
+    <div class="dino-info">
+        <h2>Tyrannosaurus Rex</h2>
+        <p><strong>Similarities:</strong> Carnivorous diet, Large size</p>
+        <p><strong>Differences:</strong> Arm size</p>
+    </div>
 
-def main():
-    t_rex = Dinosaur("Tyrannosaurus Rex", {"size": "large", "diet": "carnivore", "habitat": "land-dwelling"})
-    triceratops = Dinosaur("Triceratops", {"size": "large", "diet": "herbivore", "habitat": "land-dwelling"})
-    velociraptor = Dinosaur("Velociraptor", {"size": "medium", "diet": "carnivore", "habitat": "land-dwelling"})
-    brachiosaurus = Dinosaur("Brachiosaurus", {"size": "gigantic", "diet": "herbivore", "habitat": "land-dwelling"})
-    plesiosaurus = Dinosaur("Plesiosaurus", {"size": "large", "diet": "piscivore", "habitat": "aquatic"})
+    <div class="dino-info">
+        <h2>Triceratops</h2>
+        <p><strong>Similarities:</strong> Quadrupedal stance, Herbivorous diet</p>
+        <p><strong>Differences:</strong> Horn structures</p>
+    </div>
 
-    relationships = {
-        t_rex: [velociraptor],
-        triceratops: [],
-        velociraptor: [t_rex],
-        brachiosaurus: [],
-        plesiosaurus: []
-    }
-    similarities = {
-        "size": {"large": ["Tyrannosaurus Rex", "Triceratops", "Plesiosaurus"], "medium": ["Velociraptor"], "gigantic": ["Brachiosaurus"]},
-        "diet": {"carnivore": ["Tyrannosaurus Rex", "Velociraptor"], "herbivore": ["Triceratops", "Brachiosaurus"], "piscivore": ["Plesiosaurus"]},
-        "habitat": {"land-dwelling": ["Tyrannosaurus Rex", "Triceratops", "Velociraptor", "Brachiosaurus"], "aquatic": ["Plesiosaurus"]}
-    }
-    print("Dinosaur Relationships:")
-    for dinosaur, relatives in relationships.items():
-        print(f"{dinosaur.name} is related to:")
-        for relative in relatives:
-            print(f" - {relative.name}")
+    <div class="dino-info">
+        <h2>Velociraptor</h2>
+        <p><strong>Similarities:</strong> Bipedal stance, Predatory behavior</p>
+        <p><strong>Differences:</strong> Size</p>
+    </div>
 
-    print("\nSimilarities and Differences:")
-    for characteristic, values in similarities.items():
-        print(f"\n{characteristic.capitalize()}:")
-        for value, dinosaurs in values.items():
-            print(f"  {value.capitalize()}:")
-            for dinosaur in dinosaurs:
-                print(f"    - {dinosaur}")
-
-if __name__ == "__main__":
-    main()
+    <div class="dino-info">
+        <h2>Relationships</h2>
+        <p>Tyrannosaurus Rex and Triceratops: Coexisted in the Late Cretaceous period</p>
+        <p>Tyrannosaurus Rex and Velociraptor: Both featured in the Jurassic Park franchise</p>
+        <p>Triceratops and Velociraptor: Likely predator-prey relationship</p>
+    </div>
+</body>
+</html>
