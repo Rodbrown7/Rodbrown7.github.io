@@ -22,7 +22,6 @@ html, body {
     height: 3em;
     padding: 1em;
     }
-    
     .menu {
     display: flex;
     flex-direction: row;
